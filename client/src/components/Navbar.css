@@ -1,0 +1,61 @@
+/* client/src/components/Navbar.css */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-around; /* Distribute items evenly */
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+      position: relative; /* Required for dropdown positioning */
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block; /* Make the link fill the list item */
+  }
+  .nav-link:hover {
+      background-color: #555;
+      border-radius: 4px;
+  }
+  
+  .dropdown-toggle::after {
+    content: ' ▼'; /* Add a down arrow */
+    font-size: 0.8em;
+  }
+  
+  .dropdown-menu {
+    display: block; /* Initially hidden, shown on hover/click */
+    position: absolute;
+    top: 100%; /* Position below the parent item */
+    left: 0;
+    background-color: #333;
+    min-width: 120px; /* Set a minimum width */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add a shadow */
+      border-radius: 4px;
+      z-index: 10; /* Ensure dropdown appears on top */
+  }
+  
+  .dropdown-item {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #555;
+  }
